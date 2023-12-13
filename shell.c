@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * shell - main props and loops of the shell
+ * hsh - main shell props and loops of the shell
  * @_info00: the params and info struc
  * @arg_vec: arg vector
  * Return: 0 on success, 1 on error, or error code
@@ -77,8 +77,8 @@ int find_builtin(info_t *_info01)
 }
 
 /**
- * find_cmd - finds a command in PATH
- * @info02: the params and info struc
+ * find_cmd - finds a command
+ * @_info02: the params and info struc
  * Return: void
  */
 
@@ -119,8 +119,8 @@ void find_cmd(info_t *_info02)
 }
 
 /**
- * fork_cmd - forks a an exec thread to run cmd
- * @info03: the params and info struc
+ * fork_cmd - forks a an exec
+ * @_info03: the params and info struc
  * Return: void
  */
 
